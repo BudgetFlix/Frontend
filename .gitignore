@@ -1,24 +1,67 @@
+# =========================
+# Node / Package Managers
+# =========================
+node_modules/
+.pnpm-store/
+.npm/
+
+# lock files (pnpm-et használunk)
+package-lock.json
+yarn.lock
+
+# =========================
+# Build output
+# =========================
+dist/
+build/
+.out/
+.next/
+
+# =========================
 # Logs
-logs
+# =========================
+logs/
 *.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# =========================
+# Env files
+# =========================
+.env
+.env.*
+!.env.example
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# =========================
+# OS / Editor
+# =========================
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# =========================
+# IDE
+# =========================
+.idea/
+.vscode/
+*.iml
+
+# =========================
+# TypeScript
+# =========================
+*.tsbuildinfo
+
+# =========================
+# Vite
+# =========================
+.vite/
+
+# =========================
+# Coverage
+# =========================
+coverage/
+
+# =========================
+# Temp
+# =========================
+tmp/
+temp/
