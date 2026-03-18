@@ -8,7 +8,8 @@
     "paths": {
       "@budgetflix/core": ["packages/core/src"],
       "@budgetflix/api": ["packages/api/src"],
-      "@budgetflix/features": ["packages/features/src"]
+      "@budgetflix/features": ["packages/features/src"],
+      "@budgetflix/ui": ["packages/ui/src"],
     }
   }
 }
