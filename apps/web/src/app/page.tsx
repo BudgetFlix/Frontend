@@ -1,12 +1,16 @@
 'use client'
 
-import { Button, YStack, Text } from '@budgetflix/ui'
+import {MovieList} from "@budgetflix/ui"
+import {useMovies} from "@budgetflix/features";
 
-export default function Home() {
-  return (
-      <YStack f={1} jc="center" ai="center">
-        <Text>BudgetFlix</Text>
-        <Button>Play</Button>
-      </YStack>
-  )
+export default function HomePage() {
+    const {movies,loading} = useMovies()
+
+    if(loading)return <div>loading....</div>
+
+    return (
+        <div>
+            <MovieList movies={movies} ></MovieList>
+        </div>
+    )
 }

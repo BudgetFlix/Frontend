@@ -2,9 +2,12 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
-    "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -13,6 +16,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "skipLibCheck": true,
     "incremental": true,
     "baseUrl": ".",
     "plugins": [
@@ -21,12 +25,24 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-      "@budgetflix/ui": ["../../packages/ui/src"],
-      "@budgetflix/core": ["../../packages/core/src"],
-      "@budgetflix/api": ["../../packages/api/src"],
-      "@budgetflix/features": ["../../packages/features/src"],
-      "@budgetflix/ui/tamagui.config": ["../../packages/ui/tamagui.config.ts"]
+      "@/*": [
+        "./src/*"
+      ],
+      "@budgetflix/ui": [
+        "../../packages/ui/src"
+      ],
+      "@budgetflix/core": [
+        "../../packages/core/src"
+      ],
+      "@budgetflix/api": [
+        "../../packages/api/src"
+      ],
+      "@budgetflix/features": [
+        "../../packages/features/src"
+      ],
+      "@budgetflix/ui/tamagui.config": [
+        "../../packages/ui/tamagui.config.ts"
+      ]
     }
   },
   "include": [
@@ -37,5 +53,7 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

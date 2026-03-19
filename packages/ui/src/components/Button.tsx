@@ -1,10 +1,15 @@
 'use client'
 
-import { Button as TamaguiButton, styled } from 'tamagui'
+import { Button } from 'tamagui'
 
-export const Button = styled(TamaguiButton, {
-    backgroundColor: 'red',
-    borderRadius: '$md',
-    height: 40,
-    paddingHorizontal: '$md',
-})
+type Props = {
+    label: string
+    onPress?: () => void
+}
+export function AppButton({ label, onPress }: Props) {
+    return (
+        <Button onPress={onPress}>
+            {label}
+        </Button>
+    )
+}

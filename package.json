@@ -15,7 +15,8 @@
     "overrides": {
       "react-native": "0.73.0",
       "react": "18.2.0",
-      "react-dom": "18.2.0"
+      "react-dom": "18.2.0",
+      "@types/react": "18.2.45"
     }
   },
 
@@ -23,6 +24,11 @@
     "tamagui": "^1.144.4",
     "@tamagui/core": "^1.144.4",
     "@tamagui/config": "^1.144.4"
+  },
+
+  "devDependencies": {
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18"
   }
 }
 
