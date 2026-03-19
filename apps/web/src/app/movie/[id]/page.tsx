@@ -4,7 +4,7 @@ import { useParams } from "next/navigation"
 import { useStream } from "@budgetflix/features"
 import { VideoPlayer } from "@budgetflix/ui"
 
-export default function MoviePage() {
+export default function Page() {
     const params = useParams()
     const movieId = Number(params.id)
 

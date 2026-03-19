@@ -4,7 +4,7 @@ import {Movie} from "@budgetflix/core";
 
 type Props = {
     movies: Movie[]
-    onClick?: () => void
+    onClick?: (movie: Movie) => void
 }
 
 export function MovieList({movies, onClick}: Props) {
@@ -14,7 +14,7 @@ export function MovieList({movies, onClick}: Props) {
                 <MovieCard
                     key={movie.id}
                     movie={movie}
-                    onPress={onClick}
+                    onPress={() => onClick?.(movie)}
                 />
             ))}
         </XStack>

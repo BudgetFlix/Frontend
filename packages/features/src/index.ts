@@ -2,3 +2,4 @@
 export * from'./mockMovies'
 export * from './useStream'
 export * from './useMovies'
+export * from './useMovieNavigation'
